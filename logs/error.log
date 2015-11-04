@@ -1,0 +1,176 @@
+2015-11-04 01:13:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Articles could not be found.
+Exception Attributes: array (
+  'class' => 'Articles',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cake2/articles
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-11-04 01:14:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Articles could not be found.
+Exception Attributes: array (
+  'class' => 'Articles',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cake2/articles
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-11-04 01:15:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Articles could not be found.
+Exception Attributes: array (
+  'class' => 'Articles',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cake2/articles
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-11-04 01:16:36 Error: [Cake\Controller\Exception\MissingActionException] Action ArticlesController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cake2/articles
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#2 C:\xampp\htdocs\cake2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-11-04 01:17:46 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'conestoga_pizza.articles' doesn't exist
+Request URL: /cake2/articles
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'articles', Array, Object(Cake\Database\Schema\Table))
+#1 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('articles', Array)
+#2 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\ORM\Table.php(423): Cake\Database\Schema\CachedCollection->describe('articles')
+#3 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\ORM\Query.php(173): Cake\ORM\Table->schema()
+#4 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\ORM\Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\table\ArticlesTable))
+#5 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\ORM\Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\table\ArticlesTable))
+#6 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\ORM\Table.php(931): Cake\ORM\Table->query()
+#7 C:\xampp\htdocs\cake2\src\Controller\ArticlesController.php(9): Cake\ORM\Table->find('all')
+#8 [internal function]: App\Controller\ArticlesController->index()
+#9 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#11 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#12 C:\xampp\htdocs\cake2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 {main}
+
+
+2015-11-04 01:25:48 Error: Fatal Error (1): Call to a member function format() on null in [C:\xampp\htdocs\cake2\src\Template\Articles\index.ctp, line 21]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-11-04 01:25:48 Error: [Cake\Error\FatalErrorException] Call to a member function format() on null
+Request URL: /cake2/articles
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 21)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-11-04 03:39:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Articles could not be found.
+Exception Attributes: array (
+  'class' => 'Articles',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cake2/articles
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-11-04 03:41:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Articles could not be found.
+Exception Attributes: array (
+  'class' => 'Articles',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cake2/articles
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-11-04 03:41:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Customer could not be found.
+Exception Attributes: array (
+  'class' => 'Customer',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cake2/customer
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-11-04 03:42:29 Error: Fatal Error (1): Call to a member function find() on boolean in [C:\xampp\htdocs\cake2\src\Controller\CustomerController.php, line 9]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-11-04 03:42:29 Error: [Cake\Error\FatalErrorException] Call to a member function find() on boolean
+Request URL: /cake2/customer
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 9)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-11-04 03:49:38 Error: Fatal Error (1): Call to a member function find() on boolean in [C:\xampp\htdocs\cake2\src\Controller\CustomerController.php, line 9]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-11-04 03:49:39 Error: [Cake\Error\FatalErrorException] Call to a member function find() on boolean
+Request URL: /cake2/customer
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 9)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-11-04 03:51:32 Error: Fatal Error (1): Call to a member function find() on boolean in [C:\xampp\htdocs\cake2\src\Controller\CustomerController.php, line 9]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-11-04 03:51:32 Error: [Cake\Error\FatalErrorException] Call to a member function find() on boolean
+Request URL: /cake2/Customer
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 9)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
