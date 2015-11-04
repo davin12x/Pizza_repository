@@ -1,12 +1,13 @@
 <h1>Conestoga Pizzeria</h1>
+<?= $this->Html->link('AddCustomer ', ['action' => 'add']) ?>
 <table>
     <tr>
-        <th>ID</th>
+        <th>Id</th>
         <th>First Name</th>
         <th>Last Name</th>
         <th>Address</th>
         <th>City</th>
-        <th>PinCode</th>
+        <th>Pin</th>
         <th>Email</th>
         <th>Phone</th>
         <th>Total</th>
@@ -14,14 +15,20 @@
     <?php foreach ($customers as $article): ?>
     <tr>
         <td><?= $article->id ?></td>
-        <td><?= $article->firstName?></td>
-        <td><?= $article->lastName?></td>
+        <td><?= $article->FirstName?></td><!--first name is databse column name-->
+        <td><?= $article->LastName?></td>
         <td><?= $article->Address?></td>
-        <td><?= $article->city?></td>
-        <td><?= $article->emai?></td>
-        <td><?= $article->pin?></td>
-        <td><?= $article->phone?></td>
-        <td><?= $article->total?></td>
+        <td><?= $article->City?></td>
+        <td><?= $article->Pin?></td>
+        <td><?= $article->Email?></td>
+        <td><?= $article->PhoneNo?></td>
+         <td><?= $this->Form->postLink(
+                'Delete',
+                ['action' => 'delete', $article->id],
+                ['confirm' => 'Are you sure?'])
+            ?>
+        </td>
+        <td><?= $this->Html->link('Edit', ['action' => 'edit', $article->id]) ?></td>
         
     </tr>
     <?php endforeach; ?>
