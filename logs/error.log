@@ -654,3 +654,138 @@ Stack Trace:
 #1 {main}
 
 
+2015-11-04 18:25:54 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [C:\xampp\htdocs\cake2\src\Model\Table\UsersTable.php, line 13]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-11-04 18:25:55 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /cake2/users
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 13)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-11-04 18:26:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class User could not be found.
+Exception Attributes: array (
+  'class' => 'User',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cake2/user
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-11-04 18:26:08 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [C:\xampp\htdocs\cake2\src\Model\Table\UsersTable.php, line 13]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-11-04 18:26:09 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /cake2/users
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 13)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-11-04 18:27:03 Error: Fatal Error (4): syntax error, unexpected '>' in [C:\xampp\htdocs\cake2\src\Model\Table\UsersTable.php, line 21]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-11-04 18:27:04 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '>'
+Request URL: /cake2/users
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 21)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-11-04 18:27:18 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\index.ctp',
+)
+Request URL: /cake2/users
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\View\View.php(575): Cake\View\View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 C:\xampp\htdocs\cake2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-11-04 18:28:59 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cake2/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\cake2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-11-04 18:35:48 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cake2/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\cake2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-11-04 18:36:56 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cake2/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\cake2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-11-04 18:37:06 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cake2/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\cake2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\cake2\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
