@@ -19,23 +19,20 @@ class CustomerTable extends Table
             ->notEmpty('Pin')
             ->requirePresence('Pin')
             
-            
             ->notEmpty('Address')
             ->requirePresence('Address')
-            
             
             ->notEmpty('City')
             ->requirePresence('City')
             
-            
-            
-            
             ->notEmpty('Email')
             ->requirePresence('Email')
             
-            
             ->notEmpty('PhoneNo')
             ->requirePresence('PhoneNo');
+        
+           
+        
         return $validator;
     }
         public function isOwnedBy($customersId, $userId)

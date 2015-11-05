@@ -10,6 +10,9 @@
         <th>Pin</th>
         <th>Email</th>
         <th>Phone</th>
+        <th>Pizza Size</th>
+        <th>Pizza Type</th>
+        <th>Toppings</th>
         <th>Total</th>
     </tr>
     <?php foreach ($customers as $article): ?>
@@ -22,6 +25,9 @@
         <td><?= $article->Pin?></td>
         <td><?= $article->Email?></td>
         <td><?= $article->PhoneNo?></td>
+        <td><?= $article->Pizza_Size?></td>
+        <td><?= $article->Crust_Type?></td>
+        <td><?= $article->Toppings?></td>
          <td><?= $this->Form->postLink(
                 'Delete',
                 ['action' => 'delete', $article->id],
