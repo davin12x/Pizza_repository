@@ -38,9 +38,9 @@ class CustomerTable extends Table
             ->requirePresence('PhoneNo');
         return $validator;
     }
-        public function isOwnedBy($articleId, $userId)
+        public function isOwnedBy($customersId, $userId)
          {
-            return $this->exists(['id' => $articleId, 'user_id' => $userId]);
+            return $this->exists(['id' => $customersId, 'user_id' => $userId]);
         }
 }
 ?>
