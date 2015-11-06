@@ -8,10 +8,17 @@ echo $this->Form->input('City');
 echo $this->Form->input('Pin');
 echo $this->Form->input('Email');
 echo $this->Form->input('PhoneNo');
-echo $this->Form->input('Pepperoni', array('type' => 'checkbox','value'=>0.50,'name'=>'pepperoni'));
-echo $this->Form->input('Chicken', array('type' => 'checkbox','value'=>0.50,'name'=>'chicken'));
-echo $this->Form->checkbox('done', ['value' =>0.50]);
-echo $this->Form->input('active', array('type' => 'checkbox', 'checked' =>true));
+echo $this->Form->input('Toppings', array('type' => 'select', 'multiple' => 'checkbox','options' => array(
+                'greenolives' => 'GreenOlives',
+                'blackolives' => 'BlackOlives',
+                'chicken' => 'Chicken',
+                'pineapple' => 'PineApple',
+                'pepperoni' => 'Pepperoni',
+                'orange' => 'Orange',
+                'feta' => 'Feta',
+                'bacon' => 'Bacon'
+            )
+         ));
 echo $this->Form->button(__('Save'));
 echo $this->Form->end();
 ?>

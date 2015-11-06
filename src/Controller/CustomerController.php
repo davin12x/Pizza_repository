@@ -25,8 +25,44 @@ class CustomerController extends AppController
             // You could also do the following
             //$newData = ['user_id' => $this->Auth->user('id')];
             //$article = $this->Articles->patchEntity($article, $newData);
+            
+            $total=0;//Created variable
+            if($customers->Pizza_Size=='small')
+            {
+                $total+=5;
+                //echo $total;
+            }
+            else if($customers->Pizza_Size=='medium')
+            {
+                $total+=10;
+            }
+              else if($customers->Pizza_Size=='large')
+            {
+                $total+=15;
+            }
+               elseif($customers->Pizza_Size=='xlarge')
+            {
+                $total+=20;
+            }
+            
+            if($customers->Crust_Type=='stuffed')//Adding Cost for Stuffed Pizza
+            {
+                $total+=2;
+            }
+            //Adding Toppings Value////////////////////
+            $count=sizeof($this->request->data['Toppings']);
+                        $j=0;
+                        for($i=0;$i<$count;$i++)
+                        {
+                            $j=$j+0.5;
+                            $total+=$j;
+                            
+                        }
+                     $total=$total-0.5;//Getting total values
+                    $customers->Total=$total;
+            //Saving
             if ($this->Customer->save($customers)) {
-                $this->Flash->success(__('Your article has been saved.'));
+                $this->Flash->success(__('Customers Has been Added'));//printing
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('Unable to add your article.'));

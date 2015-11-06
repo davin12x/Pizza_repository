@@ -12,9 +12,29 @@ echo $this->Form->input('Pizza_Size',['options'=>['small'=>'Small    $5','medium
 echo $this->Form->input('Crust_Type',['options'=>['handtossed'=>'HandTossed','pan'=>'Pan','stuffed'=>'Stuffed $2','thin'=>'Thin']]);?>
 <div>
 <?php 
-echo $this->Form->input('Pepperoni', array('type' => 'checkbox','value'=>0.50,'name'=>'pepperoni'));
-echo $this->Form->input('Chicken', array('type' => 'checkbox','value'=>0.50,'name'=>'chicken'));
-echo $this->Form->checkbox('done', ['value' =>'checkbox']);
+
+ echo $this->Form->input('Toppings', array('type' => 'select', 'multiple' => 'checkbox','options' => array(
+                'greenolives' => 'GreenOlives',
+                'blackolives' => 'BlackOlives',
+                'chicken' => 'Chicken',
+                'pineapple' => 'PineApple',
+                'pepperoni' => 'Pepperoni',
+                'orange' => 'Orange',
+                'feta' => 'Feta',
+                'bacon' => 'Bacon'
+            )
+         ));
+
+/*$activities = ['name'=>'pep','name'=>'fgyey','value'=>'pesefwefp'];
+
+echo $this->Form->input('activity.sports', 
+                        array('options' => $activities,
+    'div' => 'input checkboxes',
+    'multiple' => 'checkbox',
+    'label' => false
+));*/
+
+
 ?>
 </div>
 <?php
