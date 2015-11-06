@@ -22,10 +22,6 @@ class CustomerController extends AppController
             $customers = $this->Customer->patchEntity($customers, $this->request->data);
             // Added this line
             $customers->user_id = $this->Auth->user('id');
-            // You could also do the following
-            //$newData = ['user_id' => $this->Auth->user('id')];
-            //$article = $this->Articles->patchEntity($article, $newData);
-            
             $total=0;//Created variable
             if($customers->Pizza_Size=='small')
             {
@@ -55,16 +51,29 @@ class CustomerController extends AppController
                         for($i=0;$i<$count;$i++)
                         {
                             $j=$j+0.5;
-                            $total+=$j;
-                            
+                            $total+=$j;   
                         }
+                        $topName=$this->request->data['Toppings'];
+                        
+                        $hi;
+                        $i=1;
+                        foreach($topName as $topN)
+                        {
+                                
+                                $ToppingsVar= "$topN,";
+                                $hi=$customers->Toppings=$ToppingsVar;
+                        }
+                       
+                       
+                         
                      $total=$total-0.5;//Getting total values
+                   
                     $customers->Total=$total;
             //Saving
-            if ($this->Customer->save($customers)) {
+         if ($this->Customer->save($customers)) {
                 $this->Flash->success(__('Customers Has been Added'));//printing
-                return $this->redirect(['action' => 'index']);
-            }
+              return $this->redirect(['action' => 'index']);
+            } 
             $this->Flash->error(__('Unable to add your article.'));
         }
         $this->set('customers', $customers);
